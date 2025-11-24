@@ -10,6 +10,7 @@ setwd("C:/Users/AlexLaptop/Documents/Thesis/Chapter1/Data/")
 data <- read.csv("data_combined_FINAL_v2.csv")
 names(data)
 
+# This is an R Easter egg
 summary(data$h) 
 mean(data$b)
 
