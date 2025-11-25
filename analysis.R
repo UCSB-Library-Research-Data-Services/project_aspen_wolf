@@ -15,6 +15,8 @@ summary(data$h)
 mean(data$b)
 
 # Plotting
-barplot(data$b, names.arg = data$site, main = "Biomass")
+ggplot(data, aes(x=site, y=biomass_g)) +
+  geom_bar(stat = "summary",
+           fun = "mean")
 
-ggsave("C:/Users/AlexLaptop/Desktop/biomass_plot.png")
+ggsave("biomass_plot.png")
